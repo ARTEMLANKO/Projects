@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: activity-session-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/interest_founder_sessions
+    username: postgres
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+
+server:
+  port: ${SERVER_PORT:8082}
